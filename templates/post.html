@@ -1,0 +1,60 @@
+{% extends "index.html" %}
+{% block title %}{{ title }}{% endblock title %}
+{% block content %}
+
+	<section id="wrapper" class="post clearfix">
+		<header id="header">
+      <a id="title" class="index" href="/">
+        <img class="avatar" src="{% static '/images/Zack-Philipps-Developer-350x350.png' %}" alt="Zack Philipps">
+        <h1>Zack Philipps</h1>
+      </a>
+      <p class="header-description">Executive Director at <a href="//tribeswell.com" target="_blank">Tribeswell</a>. Co-Creator of <a href="http://scratchtheme.com" target="_blank">Scratch</a>. Lover of all things design, tech, music, and equality. Say <a href="mailto:hello@zackphilipps.com">hello</a> or
+        <a href="http://twitter.com/zackphilipps" target="_blank">
+          <i class="ion-social-twitter"></i>
+        </a>
+        <a href="http://linkedin.com/in/zackphilipps" target="_blank">
+          <i class="ion-social-linkedin"></i>
+        </a>
+        <a href="http://github.com/zackphilipps" target="_blank">
+          <i class="ion-social-octocat"></i></a>.
+      </p>
+    </header>
+
+		<article class="post">
+			<section class="post-body">
+        <h1 class="post-title">{{ title }}</h1>
+				{% block body %}
+					This is where the post contents is.
+				{% endblock body %}
+			</section>
+		</article>
+
+		<footer id="post-meta" class="clearfix">
+			<div class="date">{{ date|date:"M j" }}</div>
+			{% if tags %}
+				<div><span>Roles</span> {{ tags }} </div>
+			{% endif %}
+		</footer>
+
+		<footer class="post-footer">
+			<nav id="post-nav">
+				<span class="prev">
+				{% if prevPost %}
+					<a href='/{{ prevPost.path }}'>
+						<span class="arrow">&larr;</span> {{ prevPost.title }}
+					</a>
+				{% endif %}
+				</span>
+
+				<span class="next">
+					{% if nextPost %}
+						<a href='/{{ nextPost.path }}'>
+							{{ nextPost.title }} <span class="arrow">&rarr;</span>
+						</a>
+					{% endif %}
+				</span>
+			</nav>
+		</footer>
+	</section>
+
+{% endblock content %}

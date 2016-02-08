@@ -1,0 +1,21 @@
+title: Kinsmen Distillery
+thumbnail: /static/images/kinsmen-thumbnail.jpg
+tags: Technical Manager, Project Manager, Developer, Photographer
+date: 04-09-2015
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+<img class="featured 2x" src="{% static '/images/kinsmen.jpg' %}"/>
+
+This project was unique because it involved probably the most teamwork of any project I've worked on. Everyone on the team put in the same amount of effort, and the result was a site that really sets itself apart.
+
+![Coolest effect ever](/static/images/kinsmen-bottles.png)
+
+I had the chance to take some of the pictures for the site, and that's really my favorite part. Our designer edited them and really brought out the colors, and together with another developer he created this amazing effect for the product pictures. Scroll through them and you'll see what I mean.
+
+[View the website here.](http://kinsmendistillery.com)
+
+{% endfilter %}
+{% endblock body %}
