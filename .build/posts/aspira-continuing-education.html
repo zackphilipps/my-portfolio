@@ -41,7 +41,27 @@
 			<section class="post-body">
         <h1 class="post-title">Aspira Continuing Education</h1>
 				
-<p><img class="featured 2x" src="/static/images/kinsmen.jpg"/></p>
+<p><img class="featured 2x" src="/static/images/aspira-courses.jpg"/></p>
+
+<p>Whew, this was a doozy. The old AspiraCE website was written in ASP with an MS SQL back-end. I rebuilt the site for WordPress, updated the design, and made it responsive. I improved several user actions on the site, like the course search above, by implementing AJAX calls instead of using GET variables.</p>
+
+<p><img src="/static/images/aspira-course.png" alt="Aspira Individual Course" /></p>
+
+<p>I added social sharing buttons to the individual courses, and added a content toggle to make sure the action buttons stayed "above the fold" for most screens.</p>
+
+<p><img src="/static/images/aspira-approvals-map.png" alt="Aspira Approvals Map" /></p>
+
+<p>Below the fold, we added an interactive map to display state approvals. My colleague David used Mapbox.js for this and it turned out way better than I imagined.</p>
+
+<p><img src="/static/images/aspira-units-status.png" alt="Aspira Units Status" /></p>
+
+<p>I added several indicators around the site for the user. The <em>Unit Hours Status</em> appears both on the user's <em>myCourses</em> page and on all online store pages so the user never accidentally buys more than what they need. Also, on the <em>Log In / myCourses</em> tab I added a little box that tells the user what course they last worked on or passed.</p>
+
+<p><img src="/static/images/aspira-course-history.png" alt="Aspira Course History" /></p>
+
+<p><img src="/static/images/aspira-certificate.png" alt="Aspira Certificate" /></p>
+
+<p>Once the user passes a course, they can dynamically generate a PDF certificate for the course with their information. This feature was also on their old site, but I rebuilt it in PHP using FPDI.</p>
 
 <p><a href="https://aspirace.com">View the website here.</a></p>
 
