@@ -330,19 +330,6 @@ p.small {
   float: right;
 }
 
-#post-nav span .arrow {
-  position: relative;
-  padding: 1px;
-}
-
-#post-nav span.prev:hover .arrow {
-  left: -4px;
-}
-
-#post-nav span.next:hover .arrow {
-  right: -4px;
-}
-
 #post-nav span.prev:hover {
   left: -3px;
 }
@@ -492,4 +479,12 @@ em, i {
 
 .post #header {
   max-width: 300px;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer p {
+  float: none;
 }
