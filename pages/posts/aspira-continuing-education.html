@@ -21,7 +21,13 @@ Below the fold, we added an interactive map to display state approvals. My colle
 
 ![Aspira Units Status](/static/images/aspira-units-status.png)
 
-I added several indicators around the site for the user. The _Unit Hours Status_ appears both on the user's _myCourses_ page and on all online store pages so the user never accidentally buys more than what they need. Also, on the _Log In / myCourses_ tab I added a little box that tells the user what course they last worked on or passed.
+I added several visual indicators around the site for the user. The _Unit Hours Status_ appears both on the user's _myCourses_ page and on all online store pages so the user never accidentally buys more than what they need. Also, on the login panel on the right I added a box that tells the user what course they last worked on or passed.
+
+<div class="small-container">
+  <img src="/static/images/aspira-login-panel.png" alt="Aspira Login Panel">
+</div>
+
+I made full use of Velocity.js for expanding / collapsing the main menu and the login panel. The result is buttery smooth sliding.
 
 ![Aspira Course History](/static/images/aspira-course-history.png)
 
@@ -29,7 +35,7 @@ I added several indicators around the site for the user. The _Unit Hours Status_
 
 Once the user passes a course, they can dynamically generate a PDF certificate for the course with their information. This feature was also on their old site, but I rebuilt it in PHP using FPDI.
 
-[View the website here.](https://aspirace.com)
+<a href="https://aspirace.com" target="_blank">View the website here.</a>
 
 {% endfilter %}
 {% endblock body %}
