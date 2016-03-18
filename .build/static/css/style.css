@@ -77,10 +77,7 @@ body {
 }
 
 /* Link to Documentation */
-#docs {
-  position: fixed;
-  top: 8px;
-  right: 6px;
+#docs, #docs-mobile {
   background: #5badf0;
   color: #fff;
   padding: 8px 12px;
@@ -88,7 +85,29 @@ body {
   font-weight: bold;
   line-height: 1.35;
   border-radius: 3px;
+}
+
+#docs {
+  position: fixed;
+  top: 8px;
+  right: 6px;
   z-index: 100;
+}
+
+#docs-mobile {
+  display: none;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+@media screen and (max-width: 440px) {
+  a#docs {
+    display: none;
+  }
+
+  #docs-mobile {
+    display: inline-block;
+  }
 }
 
 #wrapper {
@@ -365,10 +384,6 @@ p.small {
     margin-top: 20px;
     display: inline-block;
     float: none;
-  }
-
-  a#docs {
-    display: none;
   }
 
   #thumbnails a:first-child {
