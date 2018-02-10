@@ -6,12 +6,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/aspira-continuing-education.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>/posts/body-mind-molly.html</loc>
+        <loc>/posts/kinsmen-distillery.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -21,7 +16,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/kinsmen-distillery.html</loc>
+        <loc>/posts/smarterhq.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -31,7 +26,12 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/smarterhq.html</loc>
+        <loc>/posts/body-mind-molly.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>/posts/aspira-continuing-education.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
