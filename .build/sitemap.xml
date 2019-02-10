@@ -6,12 +6,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/kinsmen-distillery.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>/posts/boyd-and-company.html</loc>
+        <loc>/posts/newmar.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
@@ -21,12 +16,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>/posts/necter.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>/posts/body-mind-molly.html</loc>
+        <loc>/posts/airstream.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>

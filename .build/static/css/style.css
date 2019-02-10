@@ -1,5 +1,85 @@
 /* Reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -8,7 +88,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   padding: 0;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -16,11 +106,15 @@ body {
   line-height: 1;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
   content: none;
 }
 
@@ -29,7 +123,9 @@ table {
   border-spacing: 0;
 }
 
-*, *:before, *:after {
+*,
+*:after,
+*:before {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -43,9 +139,13 @@ table {
 }
 
 /* Spacing */
-.post p, .post ul {
+.post h2,
+.post h3,
+.post h4,
+.post p,
+.post ul {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 5px;
 }
 
 .post p {
@@ -64,7 +164,8 @@ table {
 }
 
 /* Base */
-html, body {
+body,
+html {
   min-height: 100%;
 }
 
@@ -77,7 +178,8 @@ body {
 }
 
 /* Link to Documentation */
-#docs, #docs-mobile {
+#docs,
+#docs-mobile {
   background: #5badf0;
   color: #fff;
   padding: 8px 12px;
@@ -113,7 +215,7 @@ body {
 #wrapper {
   max-width: 880px;
   margin: 0 auto;
-  padding: 100px 40px 100px 40px;
+  padding: 100px 40px;
 }
 
 #wrapper.post {
@@ -129,8 +231,7 @@ img {
 }
 
 #thumbnails {
-  margin: 0 auto;
-  margin-top: 60px;
+  margin: 60px auto 0;
   text-align: center;
 }
 
@@ -145,7 +246,8 @@ img {
   margin-top: 2%;
 }
 
-#thumbnails a:nth-child(1), #thumbnails a:nth-child(2) {
+#thumbnails a:nth-child(1),
+#thumbnails a:nth-child(2) {
   margin-top: 0;
 }
 
@@ -153,7 +255,8 @@ img {
   margin-right: 0;
 }
 
-#thumbnails a, #thumbnails a span {
+#thumbnails a,
+#thumbnails a span {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
@@ -178,7 +281,7 @@ img {
 }
 
 #thumbnails a:hover {
-  opacity: .85;
+  opacity: 0.85;
 }
 
 #thumbnails a:hover span {
@@ -188,7 +291,7 @@ img {
 
 #footer {
   box-shadow: inset 0 1px 0 #eee;
-  padding: 40px 0 0 0;
+  padding: 40px 0 0;
   margin-top: 100px;
   position: relative;
 }
@@ -247,7 +350,7 @@ h1 {
 h3 {
   font-size: 13px;
   font-weight: bold;
-  color: #fff;
+  color: #222;
   margin-bottom: 6px;
 }
 
@@ -285,24 +388,30 @@ p.small {
   color: #444;
 }
 
-#post-meta div {
-  display: inline-block;
+@media (min-width: 768px) {
+  #post-meta div {
+    display: inline-block;
+  }
 }
 
 #post-meta div span {
   color: #aaa;
-  font-weight: 5 00;
   display: block;
   margin-bottom: 2px;
 }
 
 #post-meta div.date {
-  float: right;
-  text-align: right;
-  position: relative;
-  top: 1px;
   font: 300 20px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;
   color: #aaa;
+}
+
+@media (min-width: 768px) {
+  #post-meta div.date {
+    float: right;
+    text-align: right;
+    position: relative;
+    top: 1px;
+  }
 }
 
 #sharing {
@@ -380,8 +489,7 @@ p.small {
   #thumbnails a:nth-child(n) {
     width: 100%;
     max-width: 300px;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto 0;
     display: inline-block;
     float: none;
   }
@@ -396,7 +504,7 @@ p.small {
   }
 
   #wrapper {
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 40px;
   }
 
   .post {
@@ -410,7 +518,6 @@ p.small {
 }
 
 /* Zack styles */
-
 #title .avatar {
   width: 80px;
   border-radius: 50%;
@@ -426,8 +533,8 @@ header h1 {
 }
 
 #title,
-#title:hover,
-#title h1 {
+#title h1,
+#title:hover {
   text-decoration: none;
   color: #5694f1;
 }
@@ -451,7 +558,8 @@ img {
   margin: 1em auto;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
@@ -502,4 +610,22 @@ em, i {
 
 #footer p {
   float: none;
+}
+
+.oneline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post h2 {
+  font: 400 18px/1.7em "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+hr {
+  display: block;
+  border: none;
+  height: 3px;
+  margin: 40px auto;
+  background: #f4f4f4;
 }
