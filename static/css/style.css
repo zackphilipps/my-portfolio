@@ -139,10 +139,13 @@ table {
 }
 
 /* Spacing */
+.post h2,
+.post h3,
+.post h4,
 .post p,
 .post ul {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 5px;
 }
 
 .post p {
@@ -347,7 +350,7 @@ h1 {
 h3 {
   font-size: 13px;
   font-weight: bold;
-  color: #fff;
+  color: #222;
   margin-bottom: 6px;
 }
 
@@ -515,7 +518,6 @@ p.small {
 }
 
 /* Zack styles */
-
 #title .avatar {
   width: 80px;
   border-radius: 50%;
@@ -526,7 +528,7 @@ p.small {
 header h1 {
   font-size: 30px;
   font-weight: 300;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
   padding-bottom: 0;
 }
 
@@ -569,7 +571,7 @@ i {
   font-size: 30px;
   color: #222;
   font-weight: 300;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
   padding-bottom: 0;
   margin: 40px 0;
   text-align: center;
@@ -614,4 +616,16 @@ i {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.post h2 {
+  font: 400 18px/1.7em "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+hr {
+  display: block;
+  border: none;
+  height: 3px;
+  margin: 40px auto;
+  background: #f4f4f4;
 }
