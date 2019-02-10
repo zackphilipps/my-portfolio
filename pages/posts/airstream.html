@@ -1,0 +1,45 @@
+title: Airstream
+thumbnail: /static/images/aspira-thumbnail.jpg
+tags: Lead Developer, Front End, Back End
+date: 27-11-2018
+
+{% extends "post.html" %}
+{% block body %}
+{% filter markdown %}
+
+<img class="featured 2x" src="{% static '/images/aspira-courses.jpg' %}"/>
+
+I was fortunate enough to help build the new website for Airstream, manufacturer of the iconic “silver bullet” travel trailer.
+
+The previous site had not been built with flexibility in mind. As a result, the wheel kept getting reinvented for each new piece of content and before long, it was a Frankensite. The redesign was all about making the site more usable, achieving a holistic look and feel, and making the content more manageable. To accomplish the last, we used [TypeRocket](https://typerocket.com/) which allowed us to apply [Laravel’s](https://laravel.com/) MVC concepts to a WordPress theme.
+
+Here are some of the components I helped create, using both back and front end development.
+
+## Product pages
+
+[Laravel accessors](https://github.com/TypeRocket/core/pull/28) combined with Twig templating (via [Timber](https://www.upstatement.com/timber/)) made output like this a breeze:
+
+![Flying Cloud quick stats](/static/images/flying-cloud-quick-stats.png)
+
+Since we were able to get the product instance from the URL, it was possible to add Twig variables for product properties to the CMS, giving the content managers more power.
+
+### Filters
+### Floorplan compare tool
+### Specs table
+
+---
+
+## Dealer locator
+
+- Mapbox
+- CSS Grid
+
+---
+
+## Mega menu
+
+- Flexbox
+- Velocity.js
+
+{% endfilter %}
+{% endblock body %}
