@@ -528,7 +528,7 @@ p.small {
 header h1 {
   font-size: 30px;
   font-weight: 300;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
   padding-bottom: 0;
 }
 
@@ -571,7 +571,7 @@ i {
   font-size: 30px;
   color: #222;
   font-weight: 300;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
   padding-bottom: 0;
   margin: 40px 0;
   text-align: center;
