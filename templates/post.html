@@ -33,9 +33,9 @@
 		</article>
 
 		<footer id="post-meta" class="clearfix">
-			<div class="date">{{ date|date:"M j" }}</div>
+			<div class="date">{{ date|date:"M j, Y" }}</div>
 			{% if tags %}
-				<div><span>Roles</span> {{ tags }} </div>
+				<div class="oneline"><span>Roles</span> {{ tags }} </div>
 			{% endif %}
 		</footer>
 

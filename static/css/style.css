@@ -385,24 +385,30 @@ p.small {
   color: #444;
 }
 
-#post-meta div {
-  display: inline-block;
+@media (min-width: 768px) {
+  #post-meta div {
+    display: inline-block;
+  }
 }
 
 #post-meta div span {
   color: #aaa;
-  font-weight: 5 00;
   display: block;
   margin-bottom: 2px;
 }
 
 #post-meta div.date {
-  float: right;
-  text-align: right;
-  position: relative;
-  top: 1px;
   font: 300 20px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;
   color: #aaa;
+}
+
+@media (min-width: 768px) {
+  #post-meta div.date {
+    float: right;
+    text-align: right;
+    position: relative;
+    top: 1px;
+  }
 }
 
 #sharing {
@@ -602,4 +608,10 @@ i {
 
 #footer p {
   float: none;
+}
+
+.oneline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
