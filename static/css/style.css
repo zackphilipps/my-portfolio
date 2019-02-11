@@ -527,8 +527,7 @@ p.small {
 
 header h1 {
   font-size: 30px;
-  font-weight: 300;
-  /* letter-spacing: -1px; */
+  font-weight: 900;
   padding-bottom: 0;
 }
 
@@ -570,8 +569,7 @@ i {
 .post-title {
   font-size: 30px;
   color: #222;
-  font-weight: 300;
-  /* letter-spacing: -1px; */
+  font-weight: 900;
   padding-bottom: 0;
   margin: 40px 0;
   text-align: center;
